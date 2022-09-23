@@ -1,0 +1,363 @@
+:root {
+  --theme-acent: #ffc700;
+  --theme-main: #fff;
+  --theme-bg-color: #222527;
+  --theme-modal-bg: rgb(239 236 236 / 90%);
+  --theme-btn-text: #060803;
+  --theme-moto-text: #fff;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.body-fixed {
+  overflow: hidden;
+}
+
+header {
+  padding: 32px 0px 72px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.about-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 36%;
+}
+.social-link {
+  margin-bottom: 26px;
+}
+.social-link svg {
+  fill: var(--theme-acent);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.about-name {
+  color: var(--theme-acent);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+.about-profession {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: var(--theme-main);
+}
+.about-positions {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin-bottom: 8px;
+  list-style: disc;
+  margin-left: 18px;
+}
+
+.about-position-text {
+  color: var(--theme-main);
+}
+.about-button {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px 16px 32px;
+  border-radius: 38px;
+  background-color: var(--theme-acent);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-btn-text);
+  margin-top: 40px;
+}
+.about-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-moto-text);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.dart-vader-img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.dart-star-png {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  bottom: -96px;
+  opacity: 0.4;
+}
+
+.achivements {
+  padding: 60px 0px;
+  background-color: var(--theme-bg-color);
+}
+
+.achivements-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin-bottom: 60px;
+}
+.achivement-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.achivement-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.achivement-item-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin: 38px 0px 4px 0px;
+}
+
+.achivement-item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+.achivement-item {
+  width: 25%;
+}
+.codex {
+  padding: 186px 0px;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.codex-motto {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--theme-acent);
+}
+
+.codex .container {
+  flex-direction: row;
+}
+
+.codex-left-side,
+.codex-right-side {
+  width: 50%;
+}
+.codex-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.codex-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin-bottom: 32px;
+}
+
+.codex-text--last {
+  margin-bottom: 60px;
+}
+.footer {
+  padding: 60px 0px 60px 0px;
+  background-color: var(--theme-bg-color);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  width: 740px;
+  margin-bottom: 40px;
+}
+.modal-conteiner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-modal-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal-form {
+  background-color: var(--theme-bg-color);
+  padding: 40px 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.close-icon svg {
+  fill: var(--theme-acent);
+}
+
+.modal-form-title {
+  color: var(--theme-acent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.modal-form-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 32px;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.modal-form-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.modal-form-name,
+.modal-form-email {
+  border: 1px solid var(--theme-main);
+  width: 440px;
+  height: 40px;
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.modal-form-submit {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px 16px 32px;
+  border-radius: 38px;
+  background-color: var(--theme-acent);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--theme-btn-text);
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-success {
+  padding: 80px 40px 88px 40px;
+  background-color: var(--theme-bg-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.modal-success-title {
+  color: var(--theme-acent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 112px;
+  text-align: center;
+}
+.modal-success-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 36px;
+}
+
+.logo svg,
+.achivement-icon svg,
+.footer svg,
+.modal-success-icon svg {
+  fill: var(--theme-acent);
+}
+
+.about--light,
+.codex--light {
+  background-image: url("../img/stardust.jpg");
+}
